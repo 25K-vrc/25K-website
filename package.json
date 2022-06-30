@@ -1,0 +1,30 @@
+{
+  "name": "25k-website",
+  "version": "0.0.1",
+  "description": "The website for Team 25K",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/25K-vrc/25K-website.git"
+  },
+  "keywords": [
+    "Team",
+    "25K"
+  ],
+  "author": "Winston Zhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/25K-vrc/25K-website/issues"
+  },
+  "homepage": "https://github.com/25K-vrc/25K-website#readme",
+  "dependencies": {
+    "imagesloaded": "^5.0.0",
+    "locomotive-scroll": "^4.1.4",
+    "parcel-bundler": "^1.12.5"
+  }
+}
