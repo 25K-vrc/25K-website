@@ -20,7 +20,52 @@
   </head>
 
   <body>
+    
+    <div data-scroll-container>
+      <header class="navigationBar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light blur">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo/longlogobow.png" alt="" width="109.06" height="17.178">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-arrow-bar-down"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav navButtons">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" data-scroll-to>START</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects" data-scroll-to>ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#robotics" data-scroll-to>SPONSORS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" data-scroll-to>CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
+
+      <main data-scroll-section>
+        <div class="bg-cover">
+          <h2 data-scroll data-scroll-speed="-3" class="bg-covertext">VRC 25K</h2>
+        </div>
+
+        <div class="covercard">
+          <h1 class="cover-headertext">Vex Robotics Competition<br>Team <span style="color: #FE7500;">25K</span></h1>
+        </div>
+
+      </main>
+
+    </div>
+
+    
 
 
     <script src="js/index.js"></script>
