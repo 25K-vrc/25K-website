@@ -1,5 +1,5 @@
 /* 
-MAIN GLOBALS 
+  MAIN GLOBALS 
 */
 
 html {
@@ -15,7 +15,7 @@ html.has-scroll-smooth {
 }
 
 body {
-  background-color: #fff;
+  background-color: #EDFFFC;
 }
 
 .responsive {
@@ -23,13 +23,97 @@ body {
   height: auto;
 }
 
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 40
+}
 
 /*
-COVER
+  BUTTONS
+*/
+
+.btn-icon {
+  float: right; 
+  padding-top: 1.5px;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active, 
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none!important;
+    outline: 0;
+}
+
+.btn-primary {
+  font-family: forma-djr-micro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 0;
+  border: none;
+  background: #FFB428;
+
+  color: #000;
+  height: 60px;
+  width: 200px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: left;
+}
+
+.btn-primary:hover {
+  background-color: #FE7500;
+  border: none;
+  color: #EDFFFC;
+}
+.btn-primary:focus {
+  background-color: #FFB428;
+  border: none;
+  color: #000;
+}
+
+
+
+.btn-light {
+  font-family: forma-djr-micro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  background: #EDFFFC;
+
+  color: #000;
+  height: 60px;
+  width: 200px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: left;
+}
+
+.btn-light:hover {
+  background-color: #fff;
+  border: 1px solid #000000;
+  color: #000;
+}
+.btn-light:focus {
+  background-color: #EDFFFC;
+  border: 1px solid #000000;
+  color: #000;
+}
+
+
+/*
+  COVER
 */
 
 .covercard {
-  background-color: #fff;
+  background-color: #EDFFFC;
   box-shadow: 0px -10px 30px rgba(143, 143, 143, 0.25);
   border-radius: 20px 20px 0px 0px;
   height: 7300px; 
@@ -49,7 +133,7 @@ COVER
 
   position: relative;
 
-  margin-top: -38px;
+  margin-top: -55px;
   padding-right: 55px;
 
   font-family: forma-djr-banner, sans-serif;
@@ -71,9 +155,37 @@ COVER
   font-weight: 400;
   font-style: normal;
   font-size: 96px;
-  position: absolute;
   width: 1150px;
   height: 228px;
   left: 55px;
   top: 70px;
+}
+
+.cover-content {
+  padding: 50px;
+  padding-top: 90px;
+}
+
+.cover-btndesc-box {
+  padding-top: 50px;
+}
+
+.cover-desc {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 119%;
+  /* or 29px */
+
+  text-align: right;
+
+  color: #4D6366;
+}
+
+.cover-glyph {
+  width: 60px;
+  height: 60px;
+  float: right;
+  margin-top: 15px;
 }
