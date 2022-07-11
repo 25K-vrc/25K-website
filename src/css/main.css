@@ -15,7 +15,7 @@ html.has-scroll-smooth {
 }
 
 body {
-  background-color: #EDFFFC;
+  background-color: #FFFBFB;
 }
 
 .responsive {
@@ -68,7 +68,7 @@ body {
 .btn-primary:hover {
   background-color: #FE7500;
   border: none;
-  color: #EDFFFC;
+  color: #FFFBFB;
 }
 .btn-primary:focus {
   background-color: #FFB428;
@@ -85,7 +85,7 @@ body {
   font-size: 20px;
   border-radius: 0;
   border: 1px solid #000000;
-  background: #EDFFFC;
+  background: #FFFBFB;
 
   color: #000;
   height: 60px;
@@ -102,7 +102,7 @@ body {
   color: #000;
 }
 .btn-light:focus {
-  background-color: #EDFFFC;
+  background-color: #FFFBFB;
   border: 1px solid #000000;
   color: #000;
 }
@@ -113,7 +113,7 @@ body {
 */
 
 .covercard {
-  background-color: #EDFFFC;
+  background-color: #FFFBFB;
   box-shadow: 0px -10px 30px rgba(143, 143, 143, 0.25);
   border-radius: 20px 20px 0px 0px;
   height: 7300px; 
