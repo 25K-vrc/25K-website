@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/base.css">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -24,7 +26,7 @@
     
     <div data-scroll-container>
       <header class="navigationBar">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light blur">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#start" data-scroll-to>
               <img src="img/logo/longlogobow.webp" alt="" width="109.06" height="17.178">
@@ -38,7 +40,7 @@
                   <a class="nav-link" href="#start" data-scroll-to>START</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#projects" data-scroll-to>ABOUT</a>
+                  <a class="nav-link" href="#about" data-scroll-to>ABOUT</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#robotics" data-scroll-to>SPONSORS</a>
@@ -54,6 +56,9 @@
 
 
       <main data-scroll-section>
+
+        <!-- Start -->
+
         <div class="bg-cover" id="start">
           <h2 data-scroll data-scroll-speed="-3" class="bg-covertext" onmousedown="return false" onselectstart="return false">VRC 25K</h2>
         </div>
@@ -72,23 +77,35 @@
 
             <div class="row cover-btndesc-box">
               <div class="col">
-                <button data-scroll class="btn btn-primary" style="margin-right: 20px;">ABOUT US <i class="material-symbols-sharp btn-icon">arrow_right_alt</i></button>
+                <button data-scroll data-scroll-to class="btn btn-primary" style="margin-right: 20px;" href="#about">ABOUT US <i class="material-symbols-sharp btn-icon">arrow_right_alt</i></button>
                 <button data-scroll class="btn btn-light">CONTACT <i class="material-symbols-sharp btn-icon">mail</i></button>
               </div>
               <div class="col">
                 <p data-scroll class="cover-desc">
-                  We are Team 25K KAPPA, a student run competitive robotics team based in<br>Markham Ontario, Canada. TEST
+                  We are Team 25K KAPPA, a student run competitive robotics team based in<br>Markham Ontario, Canada.
                 </p>     
               </div>
             </div>
             
           </div>
-          
-          
+        </div>
 
-          
 
-          </button>
+
+        <!-- About -->
+
+        <div data-scroll class="about-container" id="about" style="padding-bottom: 800px;">
+          <div class="row">
+            <div class="col">
+              <h2 class="section-header">About<br>Us</h2>
+              <p>
+
+              </p>
+            </div>
+            <div class="col">
+
+            </div>
+          </div>
         </div>
         
 
@@ -100,5 +117,6 @@
 
 
     <script src="js/index.js"></script>
+    <script src="js/scrollObserve.js"></script>
   </body>
 </html>
