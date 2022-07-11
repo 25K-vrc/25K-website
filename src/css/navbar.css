@@ -18,11 +18,11 @@
 }
 
 .navbar-nav .nav-link {
-  color: black;
+  color: var(--dark100);
 }
 
 .nav-item:hover .nav-link {
-  color: #4D6366
+  color: var(--dark60);
 }
 
 .navbar-toggler,
@@ -41,7 +41,6 @@
 }
 
 .nav-scrolled {
-  background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(6px);
   
 }

@@ -3,7 +3,7 @@
 */
 
 .covercard {
-  background-color: #FFFBFB;
+  background-color: var(--light100);
   box-shadow: 0px -10px 30px rgba(143, 143, 143, 0.25);
   clip-path: inset(-50px -5px 0px -5px);
   border-radius: 20px 20px 0px 0px;
@@ -37,7 +37,7 @@
   text-align: right;
   float: right;
 
-  color: #000000;
+  color: var(--dark100);
 }
 
 
@@ -71,7 +71,7 @@
 
   text-align: right;
 
-  color: #4D6366;
+  color: var(--dark60);
 }
 
 .cover-glyph {

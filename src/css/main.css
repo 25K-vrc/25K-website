@@ -15,7 +15,7 @@ html.has-scroll-smooth {
 }
 
 body {
-  background-color: #FFFBFB;
+  background-color: var(--light100);
 }
 
 .responsive {
@@ -54,9 +54,9 @@ body {
   font-size: 20px;
   border-radius: 0;
   border: none;
-  background: #FFB428;
+  background: var(--orange80);
 
-  color: #000;
+  color: var(--dark100);
   height: 60px;
   width: 200px;
 
@@ -66,14 +66,14 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #FE7500;
+  background-color: var(--orange100);
   border: none;
-  color: #FFFBFB;
+  color: var(--light100);
 }
 .btn-primary:focus {
-  background-color: #FFB428;
+  background-color: var(--orange80);
   border: none;
-  color: #000;
+  color: var(--dark100);
 }
 
 
@@ -84,10 +84,10 @@ body {
   font-style: normal;
   font-size: 20px;
   border-radius: 0;
-  border: 1px solid #000000;
-  background: #FFFBFB;
+  border: 1px solid var(--dark100);
+  background: var(--light100);
 
-  color: #000;
+  color: var(--dark100);
   height: 60px;
   width: 200px;
 
@@ -97,14 +97,14 @@ body {
 }
 
 .btn-light:hover {
-  background-color: #fff;
-  border: 1px solid #000000;
-  color: #000;
+  background-color: var(--light80);
+  border: 1px solid var(--dark100);
+  color: var(--dark100);
 }
 .btn-light:focus {
-  background-color: #FFFBFB;
-  border: 1px solid #000000;
-  color: #000;
+  background-color: var(--light100);
+  border: 1px solid var(--dark100);
+  color: var(--dark100);
 }
 
 
@@ -119,5 +119,5 @@ body {
   font-size: 96px;
   line-height: 91px;
 
-  color: #000;
+  color: var(--dark100);
 }
