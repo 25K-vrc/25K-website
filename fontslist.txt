@@ -1,0 +1,6 @@
+Fonts
+
+Forma DJR Deck - Light, Regular
+Forma DJR Text - Extra Light, Light, Regular
+Forma DJR Banner - Light, Hairline
+Forma DJR Micro - Light
