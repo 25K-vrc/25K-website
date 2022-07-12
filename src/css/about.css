@@ -5,5 +5,40 @@
 .about-container {
   padding-top: 150px;
   padding-left: 55px;
+  width: 100%;
+}
+
+.about-txt {
+  margin-top: 150px;
+}
+
+.about-sidetxt {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 400px;
+  /* identical to box height, or 476px */
+
+  text-align: left;
+
+  color: var(--dark40);
+
+  
+  z-index: 2;
+  position:absolute;
+  transform: translateX(-30%) translateY(-30%) rotate(-90deg);
+  transform-origin: right;
+}
+
+.about-sidetxt-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.about-photo {
+  margin-top: 60px;
+  width: 80%;
 }
 

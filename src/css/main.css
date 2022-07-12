@@ -112,6 +112,15 @@ body {
   CONTENT
 */
 
+.img-scroll-animate {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.img-scroll {
+  opacity: 1;
+}
+
 .section-header {
   font-family: forma-djr-banner, sans-serif;
   font-weight: 300;
@@ -120,4 +129,25 @@ body {
   line-height: 91px;
 
   color: var(--dark100);
+}
+
+.std-txt {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 119%;
+  /* or 24px */
+
+  color: var(--dark100);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--orange80);
+  color: var(--orange80);
+  height: 2px;
+  opacity: 100%;
+  position: relative;
 }
