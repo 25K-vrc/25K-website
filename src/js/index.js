@@ -15,7 +15,9 @@ scroll = new LocomotiveScroll({
   multiplier: 1.5,
 
   
-  
+  smartphone: {
+    smooth: true,
+  },
   
   tablet: {
     smooth: true,

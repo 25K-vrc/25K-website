@@ -33,6 +33,7 @@
     box-shadow: none;
     border: none;
     outline: none;
+    padding-top: 12px;
 }
 
 .navbar-brand {
@@ -42,5 +43,19 @@
 
 .nav-scrolled {
   backdrop-filter: blur(6px);
-  
+  -webkit-backdrop-filter: blur(6px);
+  -moz-backdrop-filter: blur(6px);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  .navbar {
+    padding-bottom: 15px;
+  }
+  .navButtons {
+    padding-left: 15px;
+  }
 }

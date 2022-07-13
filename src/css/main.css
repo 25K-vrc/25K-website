@@ -121,6 +121,18 @@ body {
   opacity: 1;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(30px);
+  display: inline-block;
+}
+
+.fade-in-animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .section-header {
   font-family: forma-djr-banner, sans-serif;
   font-weight: 300;
@@ -135,7 +147,7 @@ body {
   font-family: forma-djr-text, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 119%;
   /* or 24px */
 
@@ -150,4 +162,35 @@ body {
   height: 2px;
   opacity: 100%;
   position: relative;
+}
+
+
+/*
+  RESPONSIVE
+*/
+
+@media screen and (max-width: 768px) {
+  .material-symbols-sharp {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 40
+  }
+  .btn-primary {
+    height: 48px;
+    width: 185px;
+    font-size: 16px;
+    padding-top: 8px;
+  }
+  .btn-light {
+    height: 48px;
+    width: 185px;
+    font-size: 16px;
+  }
+  .btn-icon {
+    padding-top: 0px;
+    margin-top: -1px;
+  }
+  
 }

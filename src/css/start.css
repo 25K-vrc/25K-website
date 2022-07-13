@@ -24,7 +24,7 @@
 
   position: relative;
 
-  margin-top: -55px;
+  margin-top: 55px;
   padding-right: 55px;
 
   font-family: forma-djr-banner, sans-serif;
@@ -40,16 +40,22 @@
   color: var(--dark100);
 }
 
+.bg-covertext-transition {
+  transition-delay: 0.5s;
+}
+
 
 .cover-headertext {
   font-family: forma-djr-deck, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 96px;
-  width: 1150px;
+  max-width: 1150px;
   height: 228px;
   left: 55px;
   top: 70px;
+  padding-right: 55px;
+  display: inline-block;
 }
 
 .cover-content {
@@ -65,7 +71,7 @@
   font-family: forma-djr-text, sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 119%;
   /* or 29px */
 
@@ -79,4 +85,92 @@
   height: 60px;
   float: right;
   margin-top: 15px;
+
+  transition-delay: 1.5s;
+}
+
+.bt-covertext-show {
+  display: inline;
+}
+
+.about-btn {
+  margin-right: 20px;
+}
+
+/*
+  RESPONSIVE
+*/
+
+@media screen and (max-width: 1400px) {
+  .bg-covertext {
+    font-size: 220px;
+    margin-top: 75px;
+  }
+  .bg-cover {
+    height: 300px;
+  }
+  .cover-headertext {
+    font-size: 80px;
+  }
+  .cover-content {
+    padding-top: 65px;
+  }
+  .cover-desc {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cover-desc {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-covertext {
+    font-size: 150px;
+    padding-right: 25px;
+    margin-top: 70px;
+  }
+  .bg-cover {
+    height: 230px;
+  }
+  .bg-covertext-show {
+    display: none;
+  }
+  .cover-content {
+    padding-left: 25px;
+    padding-top: 65px;
+    padding-right: 25px;
+  }
+  .cover-headertext {
+    font-size: 48px;
+    padding-right: 25px;
+    height: 160px;
+  }
+  .cover-glyph {
+    width: 45px;
+    height: 45px;
+    margin-top: 0px;
+    margin-right: -5px;
+  }
+  .cover-btndesc-box {
+    padding-top: 20px;
+  }
+  .about-btn {
+    margin-right: 10px;
+  }
+  .contact-btn {
+    height: 48px;
+    width: 48px;
+    padding-right: 10px;
+    padding-left: 0px;
+  }
+  .contact-btntext {
+    display: none;
+  }
+
 }

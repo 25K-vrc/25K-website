@@ -27,13 +27,15 @@
     
     <div data-scroll-container>
       <header class="navigationBar">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#start" data-scroll-to>
               <img src="img/logo/longlogobow.webp" alt="" width="109.06" height="17.178">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="bi bi-arrow-bar-down"></i>
+              <i class="material-symbols-sharp">
+                menu
+              </i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav navButtons">
@@ -51,7 +53,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> 
         </nav>
       </header>
 
@@ -61,27 +63,27 @@
         <!-- Start -->
 
         <div class="bg-cover" id="start">
-          <h2 data-scroll data-scroll-speed="-3" class="bg-covertext" onmousedown="return false" onselectstart="return false">VRC 25K</h2>
+          <h2 data-scroll data-scroll-speed="-3" data-scroll-position="top" class="bg-covertext textAnimate" onmousedown="return false" onselectstart="return false"><span class="bg-covertext-show fade-in bg-covertext-transition">VRC&nbsp; </span><span class="fade-in bg-covertext-transition">25K</span></h2>
         </div>
         <div class="covercard">
 
-          <div data-scroll data-scroll-speed="-1" class="cover-content">
+          <div data-scroll data-scroll-speed="-1" data-scroll-position="top" class="cover-content">
             <div class="row">
-              <div class="col">
-                <h1 class="cover-headertext">Vex Robotics Competition<br>Team <span style="color: #FE7500;">25K</span></h1>
+              <div class="col-11">
+                <h1 class="cover-headertext textAnimate"><span class="fade-in">Vex&nbsp; </span><span class="fade-in">Robotics&nbsp; </span><span class="fade-in">Competition&nbsp; </span><br><span class="fade-in">Team&nbsp; </span><span style="color: #FE7500;" class="fade-in">25K</span></h1>
               </div>
-              <div class="col">
-                <img data-scroll data-scroll-speed="-0.5" src="img/logo/25kglyphgray.webp" alt="25K Glyph" class="cover-glyph">
+              <div class="col-1">
+                <img data-scroll data-scroll-speed="-0.5" data-scroll-class="fade-in-animate" src="img/logo/25kglyphgray.webp" alt="25K Glyph" class="cover-glyph fade-in">
               </div>
               
             </div>
 
             <div class="row cover-btndesc-box">
-              <div class="col">
-                <button data-scroll data-scroll-to class="btn btn-primary" style="margin-right: 20px;" href="#about">ABOUT US <i class="material-symbols-sharp btn-icon">arrow_right_alt</i></button>
-                <button data-scroll class="btn btn-light">CONTACT <i class="material-symbols-sharp btn-icon">mail</i></button>
+              <div class="col-xl-5 order-xl-1 order-2">
+                <button data-scroll data-scroll-to class="btn btn-primary about-btn" href="#about">ABOUT US <i class="material-symbols-sharp btn-icon">arrow_right_alt</i></button>
+                <button data-scroll class="btn btn-light contact-btn"><span class="contact-btntext">CONTACT </span><i class="material-symbols-sharp btn-icon">mail</i></button>
               </div>
-              <div class="col">
+              <div class="col-xl-7 order-xl-2 order-1">
                 <p data-scroll class="cover-desc">
                   We are Team 25K KAPPA, a student run competitive robotics team based in<br>Markham Ontario, Canada.
                 </p>     
@@ -131,5 +133,7 @@
 
     <script src="js/index.js"></script>
     <script src="js/scrollObserve.js"></script>
+    <script src="js/textAnimate.js"></script>
+    <script src="js/textAnimate.js"></script>
   </body>
 </html>
