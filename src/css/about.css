@@ -42,3 +42,53 @@
   width: 80%;
 }
 
+.about-teammembers-container {
+  margin-top: 100px;
+}
+
+.about-teammembers-rowcontainer {
+  overflow: auto; 
+  padding-bottom: 25px;
+  padding-top: 40px;
+  margin-left: -55px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about-teammembers-rowcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  border-radius: 0px;
+  background: var(--light100);
+  width: 381px;
+  height: 146px;
+  left: 0px;
+  top: 0px;
+
+  border: 1px solid #000000;
+}
+.card:hover {
+  background: var(--light80);
+}
+
+.card-title {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  
+  color: var(--dark100);
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+
+  color: var(--dark100);
+}

@@ -124,7 +124,7 @@ body {
 .fade-in {
   opacity: 0;
   transition: all 1s ease;
-  transform: translateY(30px);
+  transform: translateY(50px);
   display: inline-block;
 }
 
@@ -139,6 +139,16 @@ body {
   font-style: normal;
   font-size: 96px;
   line-height: 91px;
+
+  color: var(--dark100);
+}
+
+.section-subheader {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 95.2%;
 
   color: var(--dark100);
 }
