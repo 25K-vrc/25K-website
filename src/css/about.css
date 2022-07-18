@@ -52,6 +52,8 @@
   padding-top: 40px;
   margin-left: -55px;
 
+  scroll-behavior: smooth;
+
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -69,9 +71,12 @@
   top: 0px;
 
   border: 1px solid #000000;
+
+  transition: all 0.5s ease;
 }
 .card:hover {
   background: var(--light80);
+  border: 1px solid var(--orange80);
 }
 
 .card-title {
@@ -91,4 +96,15 @@
   font-size: 20px;
 
   color: var(--dark100);
+}
+
+.about-scroller-btn {
+  height: 60px;
+  width: 60px;
+}
+
+.about-scroller-btn-container {
+  padding-top: 10px;
+  padding-right: 60px;
+  float: right;
 }

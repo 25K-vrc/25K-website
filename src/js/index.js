@@ -5,14 +5,14 @@ const imagesLoaded = require("imagesloaded");
 
 let scrollContainer = document.querySelector("[data-scroll-container]");
 
-var scroll;
+export var scroll;
 
 scroll = new LocomotiveScroll({
   el: scrollContainer,
   firefoxMultiplier: 100,
   smooth: true,
   getSpeed: true,
-  multiplier: 1.5,
+  multiplier: 1.1,
 
   
   smartphone: {

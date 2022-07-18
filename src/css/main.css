@@ -63,6 +63,8 @@ body {
   padding-left: 18px;
   padding-right: 18px;
   text-align: left;
+
+  transition: all 0.5s ease;
 }
 
 .btn-primary:hover {
@@ -94,17 +96,21 @@ body {
   padding-left: 18px;
   padding-right: 18px;
   text-align: left;
+
+  transition: all 0.5s ease;
 }
 
 .btn-light:hover {
   background-color: var(--light80);
   border: 1px solid var(--dark100);
   color: var(--dark100);
+  border: 1px solid var(--orange80);
 }
 .btn-light:focus {
   background-color: var(--light100);
   border: 1px solid var(--dark100);
   color: var(--dark100);
+  border: 1px solid var(--orange80);
 }
 
 
@@ -165,15 +171,19 @@ body {
 }
 
 .line {
-  width: 100%;
+  width: 0%;
   height: 1px;
-  background-color: var(--orange80);
-  color: var(--orange80);
+  background-color: var(--orange100);
+  color: var(--orange100);
   height: 2px;
   opacity: 100%;
   position: relative;
 }
 
+.line-animate {
+  width: 100%;
+  transition: 1s ease;
+}
 
 /*
   RESPONSIVE
