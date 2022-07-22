@@ -189,6 +189,13 @@ body {
   RESPONSIVE
 */
 
+@media screen and (max-width: 1400px) {
+  .section-header {
+    font-size: 80px;
+    line-height: 95.2%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .material-symbols-sharp {
     font-variation-settings:
@@ -211,6 +218,19 @@ body {
   .btn-icon {
     padding-top: 0px;
     margin-top: -1px;
+  }
+
+  .section-header {
+    font-size: 48px;
+    line-height: 95.2%;
+  }
+  .section-subheader {
+    font-size: 36px;
+    line-height: 95.2%;
+  }
+  .std-txt {
+    font-size: 18px;
+    line-height: 130%;
   }
   
 }
