@@ -115,6 +115,45 @@
   float: right;
 }
 
+/* OUR SEASON STYLES */
+
+.our-season-container {
+  margin-top: 100px;
+}
+
+.our-season-txt {
+  margin-top: 50px;
+}
+
+.our-season-video {
+  margin-top: 400px;
+  margin-right: 100px;
+}
+
+.our-season-sidetxt {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 400px;
+  /* identical to box height, or 476px */
+  line-height: 130%;
+  text-align: right;
+
+  color: var(--dark40);
+
+  position: absolute;
+  z-index: -1;
+}
+
+.our-season-sidetxt-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
 @media screen and (max-width: 1400px) {
   .about-sidetxt {
     font-size: 300px;
