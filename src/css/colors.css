@@ -1,0 +1,14 @@
+/*
+  GLOBAL ROOT COLORS
+*/
+
+:root {
+  --orange100: #FE7500;
+  --orange80: #FFB428;
+  --dark100: #000000;
+  --dark80: #1F1F1F;
+  --dark60: #4D6366;
+  --dark40: #3A9494;
+  --light100: #FFFBFB;
+  --light80: #FFFFFF;
+}

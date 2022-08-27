@@ -1,6 +1,6 @@
 /*NAVIGATION*/
 
-.navigationBar{
+.navigationBar {
   font-family: forma-djr-deck, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -8,17 +8,21 @@
   line-height: 22px;
 }
 
+.navbar {
+  padding-bottom: 30px;
+}
+
 .navButtons {
-  padding-top: 30px; 
+  padding-top: 25px; 
   padding-right: 30px;
 }
 
 .navbar-nav .nav-link {
-  color: black;
+  color: var(--dark100);
 }
 
 .nav-item:hover .nav-link {
-  color: #4D6366
+  color: var(--dark60);
 }
 
 .navbar-toggler,
@@ -29,9 +33,29 @@
     box-shadow: none;
     border: none;
     outline: none;
+    padding-top: 12px;
 }
 
 .navbar-brand {
   padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 25px;
+}
+
+.nav-scrolled {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  -moz-backdrop-filter: blur(6px);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  .navbar {
+    padding-bottom: 15px;
+  }
+  .navButtons {
+    padding-left: 15px;
+  }
 }
