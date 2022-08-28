@@ -1,0 +1,24 @@
+.sponsors-container {
+  padding-top: 150px;
+  padding-left: 55px;
+  padding-right: 55px;
+  width: 100%;
+}
+
+.sponsors-list-container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.sponsor-row {
+  padding-top: 80px;
+}
+
+.sponsor-logo {
+  width: 400px;
+}
+
+.sponsor-text {
+  text-align: right;
+  padding-top: 20px;
+}
