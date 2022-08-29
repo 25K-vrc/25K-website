@@ -1,0 +1,28 @@
+/*
+  CONTACT
+*/
+
+.contact-section-bkg {
+  background: linear-gradient(to bottom, var(--light100), var(--light80));
+  clip-path: inset(-50px -5px 0px -5px);
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  margin-top: 200px;
+  padding: 55px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.contact-btn-container {
+  padding-top: 70px;
+}
+
+.email-btn {
+  margin-right: 20px;
+}
+
+.social-btn {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
