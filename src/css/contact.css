@@ -1,0 +1,15 @@
+/*
+  CONTACT
+*/
+
+.contact-section-bkg {
+  background-color: var(--light80);
+  clip-path: inset(-50px -5px 0px -5px);
+  border-radius: 20px 20px 0px 0px;
+  height: 70vh; 
+  z-index: 1; 
+  position: relative;
+  margin-top: 200px;
+  padding: 55px;
+  padding-top: 100px;
+}
