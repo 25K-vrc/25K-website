@@ -22,7 +22,7 @@
 }
 
 .nav-item:hover .nav-link {
-  color: var(--dark60);
+  color: var(--dark100);
 }
 
 .navbar-toggler,
