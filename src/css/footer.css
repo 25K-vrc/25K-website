@@ -1,6 +1,14 @@
 .footer-container {
   padding: 80px 55px;
+  padding-bottom: 25px;
   height: min-content;
+  float: inline-end;
+}
+
+.footer-col {
+  width: max-content;
+  margin-bottom: 70px;
+  margin-right: 40px;
 }
 
 .footer-list {
@@ -22,4 +30,16 @@
 }
 .footer-link:hover {
   color: var(--dark100);
+}
+
+.footer-c {
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 15px;
+
+  text-align: right;
+
+  color: var(--dark60);
 }
