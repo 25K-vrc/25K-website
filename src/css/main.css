@@ -172,7 +172,6 @@ body {
 
 .line {
   width: 0%;
-  height: 1px;
   background-color: var(--orange100);
   color: var(--orange100);
   height: 2px;
@@ -231,6 +230,10 @@ body {
   .std-txt {
     font-size: 18px;
     line-height: 130%;
+  }
+  .line-animate {
+    width: 80%;
+    float: right;
   }
   
 }
