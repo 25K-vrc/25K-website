@@ -29,4 +29,8 @@ imagesLoaded(scrollContainer, { background: true }, function () {
   scroll.update();
 });
 
+document.addEventListener('lazyloaded', function(){
+  locoScroll.update()
+});
+
 //print("test");
