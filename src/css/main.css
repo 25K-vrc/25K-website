@@ -146,6 +146,11 @@ body {
   CONTENT
 */
 
+.main-section {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .img-scroll-animate {
   opacity: 0;
   transition: opacity 2s;
