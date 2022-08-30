@@ -225,6 +225,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   .material-symbols-sharp {
     font-variation-settings:
     'FILL' 0,
@@ -262,11 +268,10 @@ body {
   }
   .line {
     margin-top: -20px;
-    margin-right: 8px;
+    margin-left: 15px;
   }
   .line-animate {
-    width: 75%;
-    float: right;
+    width: 80%;
   }
   
 }
