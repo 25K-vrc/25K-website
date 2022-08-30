@@ -22,3 +22,38 @@
   text-align: right;
   padding-top: 20px;
 }
+
+.sponsor-line {
+  padding-left: 400px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  .sponsors-container {
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+  }
+  .sponsors-list-container {
+    padding-top: 10px;
+  }
+  .sponsor-row {
+    padding-top: 40px;
+  }
+  .sponsor-logo {
+    max-width: 62%;
+  }
+  .sponsor-text {
+    text-align: right;
+    padding-top: 15px;
+  }
+  .sponsor-line {
+    padding-left: 170px;
+  }
+  .sponsor-text {
+    text-align: left;
+    padding-top: 20px;
+  }
+}

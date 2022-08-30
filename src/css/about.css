@@ -184,6 +184,9 @@
   padding-right: 55px;
 }
 
+
+/*RESPONSIVE*/
+
 @media screen and (min-width: 1800px) {
   .about-teammembers-rowcontainer {
     margin-left: calc((108vw - 1800px)/2*(-1));
