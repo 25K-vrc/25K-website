@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 html.has-scroll-smooth {
@@ -204,6 +205,7 @@ body {
   height: 2px;
   opacity: 100%;
   position: relative;
+  margin-top: -30px;
 }
 
 .line-animate {
@@ -258,8 +260,12 @@ body {
     font-size: 18px;
     line-height: 130%;
   }
+  .line {
+    margin-top: -20px;
+    margin-right: 8px;
+  }
   .line-animate {
-    width: 80%;
+    width: 75%;
     float: right;
   }
   

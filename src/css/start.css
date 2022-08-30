@@ -172,5 +172,10 @@
   .contact-btntext {
     display: none;
   }
+  .covercard {
+    height: 80vh;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
 
 }

@@ -1,6 +1,6 @@
 import { scroll } from './index.js';
 
-//functions for animating text
+//  functions for animating text
 
 //console.log("textAnimate.js loaded");
 
