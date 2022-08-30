@@ -3,7 +3,7 @@
 */
 
 .contact-section-bkg {
-  background: linear-gradient(to bottom, var(--light100), var(--light80));
+  background: linear-gradient(to bottom, var(--light100) 60%, var(--light80));
   clip-path: inset(-50px -5px 0px -5px);
   border-radius: 20px 20px 20px 20px;
   position: relative;
@@ -25,4 +25,39 @@
   height: 60px;
   width: 60px;
   margin-right: 20px;
+}
+
+.contact-line {
+  padding-left: 440px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  .contact-section-bkg {
+    margin-top: 50px;
+    padding: 25px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .contact-btn-container {
+    padding-top: 30px;
+  }
+  .contact-line {
+    padding-left: 200px;
+  }
+  .social-btn {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-left: 0px;
+  }
+  .email-btn {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
 }

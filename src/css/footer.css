@@ -43,3 +43,22 @@
 
   color: var(--dark60);
 }
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    padding: 70px 25px;
+    padding-bottom: 5px;
+    float: inline-start;
+    margin-left: 0px;
+  }
+  .footer-col {
+    margin-right: 5px;
+  }
+  .footer-c {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+}

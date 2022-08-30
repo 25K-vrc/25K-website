@@ -16,7 +16,7 @@ scroll = new LocomotiveScroll({
 
   
   smartphone: {
-    smooth: true,
+    smooth: false,
   },
   
   tablet: {
@@ -27,6 +27,10 @@ scroll = new LocomotiveScroll({
 
 imagesLoaded(scrollContainer, { background: true }, function () {
   scroll.update();
+});
+
+document.addEventListener('lazyloaded', function(){
+  locoScroll.update()
 });
 
 //print("test");

@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 html.has-scroll-smooth {
@@ -145,6 +146,11 @@ body {
   CONTENT
 */
 
+.main-section {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 .img-scroll-animate {
   opacity: 0;
   transition: opacity 2s;
@@ -199,12 +205,12 @@ body {
 
 .line {
   width: 0%;
-  height: 1px;
   background-color: var(--orange100);
   color: var(--orange100);
   height: 2px;
   opacity: 100%;
   position: relative;
+  margin-top: -30px;
 }
 
 .line-animate {
@@ -224,6 +230,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   .material-symbols-sharp {
     font-variation-settings:
     'FILL' 0,
@@ -258,6 +270,13 @@ body {
   .std-txt {
     font-size: 18px;
     line-height: 130%;
+  }
+  .line {
+    margin-top: -20px;
+    margin-left: 15px;
+  }
+  .line-animate {
+    width: 90%;
   }
   
 }
