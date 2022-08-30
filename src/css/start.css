@@ -127,6 +127,9 @@
     padding-bottom: 20px;
     margin-left: 2px;
   }
+  .covercard {
+    height: 88vh;
+  }
 }
 
 @media screen and (max-width: 768px) {

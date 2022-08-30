@@ -5,7 +5,8 @@
 .about-container {
   padding-top: 150px;
   padding-left: 55px;
-  padding-bottom: 180px;
+  padding-bottom: 0px;
+  padding-right: 55px;
   width: 100%;
 }
 
@@ -27,7 +28,7 @@
   
   z-index: 2;
   position:absolute;
-  transform: translateX(-30%) translateY(-30%) rotate(-90deg);
+  transform: translateX(-22%) translateY(-30%) rotate(-90deg);
   transform-origin: right;
 }
 
@@ -58,6 +59,7 @@
   padding-bottom: 25px;
   padding-top: 40px;
   margin-left: -55px;
+  margin-right: -55px;
 
   scroll-behavior: smooth;
 
@@ -112,14 +114,17 @@
 
 .about-scroller-btn-container {
   padding-top: 10px;
-  padding-right: 60px;
+ 
   float: right;
 }
 
 /* OUR SEASON STYLES */
 
 .our-season-container {
-  margin-top: 100px;
+  display: inline-block;
+  margin-bottom: -150px;
+  width: 100%;
+  height: max-content;
 }
 
 .our-season-txt {
@@ -127,8 +132,12 @@
 }
 
 .our-season-video {
-  margin-top: 400px;
   margin-right: 100px;
+  transition: 0.5s filter ease;
+}
+.our-season-video:hover {
+  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.25));
+  transition: 0.5s filter ease;
 }
 
 .our-season-sidetxt {
@@ -137,7 +146,7 @@
   font-style: normal;
   font-size: 400px;
   /* identical to box height, or 476px */
-  line-height: 130%;
+  line-height: 120%;
   text-align: right;
 
   color: var(--dark40);
@@ -149,14 +158,16 @@
 .our-season-sidetxt-container {
   display: flex;
   justify-content: flex-end;
-  height: 100%;
+  align-items: center;
   position: relative;
-  padding-right: 60px;
   padding-left: 60px;
+  height: 1000px;
 }
 
 .our-season-content {
-  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-season-videoplayer {
@@ -164,15 +175,85 @@
   height: 300px;
 }
 
+.our-season-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-teammembers-collast {
+  padding-right: 55px;
+}
+
+@media screen and (min-width: 1800px) {
+  .about-teammembers-rowcontainer {
+    margin-left: calc((108vw - 1800px)/2*(-1));
+    margin-right: calc((108vw - 1800px)/2*(-1));
+  }
+  .about-teammembers-col {
+    margin-left: calc((103vw - 1800px)/2);
+  }
+  .about-teammembers-collast {
+    padding-right: calc((103vw - 1800px)/2);
+  }
+  
+}
+
 @media screen and (max-width: 1400px) {
   .about-sidetxt {
     font-size: 300px;
   }
+  .our-season-sidetxt {
+    font-size: 300px;
+  }
+  .our-season-sidetxt-container {
+    height: 800px;
+  }
+  .our-season-video {
+    margin-right: 35px;
+  }
+  .our-season-videoplayer {
+    width: 400px;
+    height: 230px;
+  }
 }
+
+@media screen and (max-width: 1200px) {
+  .our-season-sidetxt {
+    display: none;
+  }
+  .our-season-video {
+    margin-right: 0px;
+  }
+  .our-season-videoplayer {
+    width: 80%px;
+    
+  }
+  .our-season-sidetxt-container {
+    height: 700px;
+  }
+}
+
 
 @media screen and (max-width: 992px) {
   .about-sidetxt-container {
     display: none;
+  }
+  .our-season-sidetxt {
+    display: none;
+  }
+  .our-season-videoplayer {
+    width: 80%;
+    height: 400px;
+  }
+  .our-season-video {
+    margin-top: 50px;
+  }
+  .our-season-sidetxt-container {
+    display: inline;
+    position: inherit;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: max-content;
   }
 }
 
@@ -223,7 +304,7 @@
     float: right;
   }
   .our-season-container {
-    margin-top: 120px;
+    margin-top: 50px;
   }
   .our-season-video {
     margin-top: 20px;
@@ -245,6 +326,6 @@
     position: inherit;
     padding-right: 0px;
     padding-left: 0px;
-
+    height: max-content;
   }
 }
