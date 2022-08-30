@@ -36,10 +36,13 @@
             <a class="navbar-brand" href="#start" data-scroll-to>
               <img src="img/logo/longlogobow.webp" alt="" width="109.06" height="17.178">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="material-symbols-sharp">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="material-symbols-sharp" id="menu-open" onclick="navigationSelect()">
                 menu
               </i>
+              <span class="material-symbols-sharp active" id="menu-close" onclick="navigationSelect()">
+                close
+              </span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav navButtons">
@@ -63,6 +66,25 @@
 
 
       <main data-scroll-section>
+
+        <div class="nav-overlay" id="nav-overlay">
+          <div class="nav-o-container">
+            <ul class="nav-o-list">
+              <li><a data-scroll-to href="#start" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">START</a></li>
+              <li><a data-scroll-to href="#about" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">ABOUT</a></li>
+              <li><a data-scroll-to href="#sponsors" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">SPONSORS</a></li>
+              <li><a data-scroll-to href="#contact" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">CONTACT</a></li>
+            </ul>
+
+            <div class="contact-btn-container" style="margin-top: 15vh;">
+              <a href="mailto:contact@25k.team"><button data-scroll class="btn btn-light social-btn" style="padding-left: 0px; padding-right: 10px;"><i class="material-symbols-sharp btn-icon">mail</i></button></a>
+              <a href="https://www.instagram.com/25k.vrc/" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-instagram btn-icon"></i></button></a>
+              <a href="https://twitter.com/vrc25k" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-twitter btn-icon"></i></button></a>
+              <a href="https://www.linkedin.com/company/vrc25k/" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-linkedin btn-icon"></i></button></a>
+            </div>
+          </div>
+        </div>
+
 
         <!-- Start -->
 
@@ -396,5 +418,27 @@
     <script src="js/scrollObserve.js"></script>
     <script src="js/scrollAnimate.js"></script>
     <script src="js/memberScroller.js"></script>
+    <script>
+      function navigationSelect() {
+        var togglerOpen=document.getElementById("menu-open");
+        var togglerClose=document.getElementById("menu-close");
+        var navbar=document.getElementById("nav-overlay");
+
+        if(togglerOpen.classList.contains('active')){
+          togglerOpen.classList.remove('active');
+          
+          togglerClose.classList.add('active');
+
+          navbar.style.top = '-100%';
+        }
+        else{
+          togglerOpen.classList.add('active');
+          
+          togglerClose.classList.remove('active');
+
+          navbar.style.top = '0';
+        }
+      }
+    </script>
   </body>
 </html>
