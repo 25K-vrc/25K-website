@@ -50,7 +50,7 @@
 @media screen and (max-width: 767px) {
   .footer-container {
     padding: 70px 25px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     float: inline-start;
     margin-left: 0px;
   }
@@ -59,6 +59,7 @@
   }
   .footer-c {
     font-size: 14px;
-    margin-top: 0px;
+    margin-top: 20px;
+    line-height: 10px;
   }
 }

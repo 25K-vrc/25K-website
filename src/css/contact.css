@@ -31,8 +31,18 @@
   padding-left: 440px;
 }
 
+.contact-linebreak {
+  display: none;
+}
+
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  .contact-line {
+    padding-left: 365px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contact-section-bkg {
@@ -59,5 +69,8 @@
   .email-btn {
     margin-right: 10px;
     margin-top: 10px;
+  }
+  .contact-linebreak {
+    display: inline;
   }
 }
