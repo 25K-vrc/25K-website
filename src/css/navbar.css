@@ -10,6 +10,7 @@
 
 .navbar {
   padding-bottom: 30px;
+  transition: 0.2s ease;
 }
 
 .navButtons {
@@ -42,9 +43,10 @@
 }
 
 .nav-scrolled {
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  -moz-backdrop-filter: blur(6px);
+  background-color: var(--light80);
+  transition: 0.2s ease;
+  padding-bottom: 10px;
+  margin-top: -20px;
 }
 
 
@@ -52,7 +54,7 @@
 .nav-overlay {
   position: fixed;
   height: 100vh;
-  background: var(--light100);
+  background: var(--light80);
   top: 0;
   left: 0;
   width: 100%;
@@ -106,5 +108,13 @@
   }
   .navButtons {
     padding-left: 15px;
+  }
+
+  .nav-scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    -moz-backdrop-filter: none;
+
+    background-color: var(--light80);
   }
 }
