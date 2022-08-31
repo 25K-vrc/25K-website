@@ -58,7 +58,7 @@
   width: 100%;
   z-index: 3;
   transition: 0.7s ease;
-  top: -100%;
+  left: 100%;
 }
 
 .nav-o-container {
