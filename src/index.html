@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Team 25K - VRC</title>
+    <meta name="description" content="We are Team 25K KAPPA, a student run competitive robotics team based in Markham Ontario, Canada.">
     <link rel="icon" media="(prefers-color-scheme: dark)" href="img/logo/icon/25k-wob.ico">
     <link rel="icon" media="(prefers-color-scheme: light)" href="img/logo/icon/25k-bow.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://use.typekit.net">
     <link rel="stylesheet" href="https://use.typekit.net/vze8jzm.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -23,7 +25,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/base.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 
   </head>
 
@@ -33,13 +35,16 @@
       <header class="navigationBar">
         <nav class="navbar fixed-top navbar-expand-md navbar-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#start" data-scroll-to>
+            <a class="navbar-brand" href="#start" data-scroll-to aria-label="KAPPA Logo">
               <img src="img/logo/longlogobow.webp" alt="" width="109.06" height="17.178">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="material-symbols-sharp">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="material-symbols-sharp" id="menu-open" onclick="navigationSelect()">
                 menu
               </i>
+              <span class="material-symbols-sharp active" id="menu-close" onclick="navigationSelect()">
+                close
+              </span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
               <ul class="navbar-nav navButtons">
@@ -63,6 +68,25 @@
 
 
       <main data-scroll-section>
+
+        <div class="nav-overlay" id="nav-overlay">
+          <div class="nav-o-container">
+            <ul class="nav-o-list">
+              <li><a data-scroll-to href="#start" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">START</a></li>
+              <li><a data-scroll-to href="#about" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">ABOUT</a></li>
+              <li><a data-scroll-to href="#sponsors" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">SPONSORS</a></li>
+              <li><a data-scroll-to href="#contact" onclick="navigationSelect()" class="hover-underline-animation nav-o-listitem">CONTACT</a></li>
+            </ul>
+
+            <div class="contact-btn-container">
+              <a href="mailto:contact@25k.team"><button data-scroll class="btn btn-light social-btn" style="padding-left: 0px; padding-right: 10px;"><i class="material-symbols-sharp btn-icon">mail</i></button></a>
+              <a href="https://www.instagram.com/25k.vrc/" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-instagram btn-icon"></i></button></a>
+              <a href="https://twitter.com/vrc25k" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-twitter btn-icon"></i></button></a>
+              <a href="https://www.linkedin.com/company/vrc25k/" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-linkedin btn-icon"></i></button></a>
+            </div>
+          </div>
+        </div>
+
 
         <!-- Start -->
 
@@ -121,7 +145,7 @@
               </p>
 
               <div class="about-photo">
-                <img data-scroll data-scroll-speed="1" data-scroll-delay="0.5" data-scroll-class="img-scroll" src="img/TeamphotoTEMP.jpg" alt="Team Photo" class="responsive img-scroll-animate">
+                <img data-scroll data-scroll-speed="1" data-scroll-delay="0.5" data-scroll-class="img-scroll" src="img/TeamphotoTEMP.webp" alt="Team Photo" class="responsive img-scroll-animate">
               </div>
 
               
@@ -140,7 +164,7 @@
                 <div class="col about-teammembers-col" style="padding-left: 60px;">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Winston Z.</h5>
+                      <h4 class="card-title">Winston Z.</h4>
                       <p class="card-text">Team Captain & Programmer<br>4th season of VRC</p>
                     </div>
                   </div>
@@ -149,8 +173,8 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Alex T.</h5>
-                      <p class="card-text">Engineer<br>4th season of VRC</p>
+                      <h4 class="card-title">Alex T.</h4>
+                      <p class="card-text">Head of Aerodynamics<br>4th season of VRC</p>
                     </div>
                   </div>
                 </div>
@@ -158,7 +182,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Felix P.</h5>
+                      <h4 class="card-title">Felix P.</h4>
                       <p class="card-text">Engineer & Driver<br>2nd season of VRC</p>
                     </div>
                   </div>
@@ -167,7 +191,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Patrick W.</h5>
+                      <h4 class="card-title">Patrick W.</h4>
                       <p class="card-text">Programmer<br>3rd season of VRC</p>
                     </div>
                   </div>
@@ -176,7 +200,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Vincent J.</h5>
+                      <h4 class="card-title">Vincent J.</h4>
                       <p class="card-text">Marketing & Scouting<br>1st season of VRC</p>
                     </div>
                   </div>
@@ -185,7 +209,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Anita D.</h5>
+                      <h4 class="card-title">Anita D.</h4>
                       <p class="card-text">Marketing & Public Relations<br>1st season of VRC</p>
                     </div>
                   </div>
@@ -194,7 +218,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Annie J.</h5>
+                      <h4 class="card-title">Annie J.</h4>
                       <p class="card-text">Notebook & Scouting<br>1st season of VRC</p>
                     </div>
                   </div>
@@ -203,7 +227,7 @@
                 <div class="col">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Alex C.</h5>
+                      <h4 class="card-title">Alex C.</h4>
                       <p class="card-text">Mentor<br>From Team 82855</p>
                     </div>
                   </div>
@@ -212,7 +236,7 @@
                 <div class="col about-teammembers-collast">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Jingyue W.</h5>
+                      <h4 class="card-title">Jingyue W.</h4>
                       <p class="card-text">Mentor<br>From Team 386</p>
                     </div>
                   </div>
@@ -247,8 +271,8 @@
               </div>
               
               <div class="col-12 col-lg-6 our-season-sidetxt-container">
-                <div class="our-season-sidetxt">
-                  SPIN<br>UP
+                <div class="our-season-sidetxt textAnimate" data-scroll data-scroll-call="scroll-call">
+                  <span class="fade-in">SPIN&nbsp; </span><br><span class="fade-in our-season-sidetxt-transition">UP</span>
                 </div>
                 
                 <div data-scroll data-scroll-speed="1" data-scroll-delay="0.5" data-scroll-class="img-scroll" class="img-scroll-animate our-season-video">
@@ -284,25 +308,25 @@
                 </div>
                 <div class="col-12 col-lg-6">
                   <p class="std-txt sponsor-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mollis turpis. Maecenas vel pellentesque quam.                  </p>
+                    Carbide3D supports us with CNC milling tools for manufacturing parts on our robot. We currently use Carbide3D's Shapeoko 4 CNC to create custom polycarbonate pieces.                  </p>
                 </div>
               </div>  
               <div class="row sponsor-row">
                 <div class="col-12 col-lg-6">
-                  <img data-scroll data-scroll-class="img-scroll" src="img/logo/robosource.webp" alt="Carbide 3D Logo" class="responsive img-scroll-animate sponsor-logo">
+                  <img data-scroll data-scroll-class="img-scroll" src="img/logo/robosource.webp" alt="Robosource Logo" class="responsive img-scroll-animate sponsor-logo">
                 </div>
                 <div class="col-12 col-lg-6">
                   <p class="std-txt sponsor-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mollis turpis. Maecenas vel pellentesque quam.                  </p>
+                    Robosource.net provides quality Vex EDR parts and robot transportation solutions for a low price. Robosource's robot box can fit our robot perfecly and can easily be brought abroad.                  </p>
                 </div>
               </div>  
               <div class="row sponsor-row">
                 <div class="col-12 col-lg-6">
-                  <img data-scroll data-scroll-class="img-scroll" src="img/logo/nommilling.webp" alt="Carbide 3D Logo" class="responsive img-scroll-animate sponsor-logo">
+                  <img data-scroll data-scroll-class="img-scroll" src="img/logo/nommilling.webp" alt="NOM Milling Logo" class="responsive img-scroll-animate sponsor-logo">
                 </div>
                 <div class="col-12 col-lg-6">
                   <p class="std-txt sponsor-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mollis turpis. Maecenas vel pellentesque quam.                  </p>
+                    NOM Milling facilitates CNC milling operations for our robot parts, run by the team.                  </p>
                 </div>
               </div>  
             </div>
@@ -324,10 +348,12 @@
           </div>
 
           <div class="contact-btn-container">
-            <a href="mailto:contact@25k.team"><button data-scroll class="btn btn-primary email-btn">EMAIL US <i class="material-symbols-sharp btn-icon">mail</i></button></a>
-            <a href="https://www.instagram.com/25k.vrc/" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-instagram btn-icon"></i></button></a>
-            <a href="https://twitter.com/vrc25k" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-twitter btn-icon"></i></button></a>
-            <a href="https://www.linkedin.com/company/vrc25k/" target="_blank"><button data-scroll class="btn btn-light social-btn"><i class="bi bi-linkedin btn-icon"></i></button></a>
+            <a href="mailto:contact@25k.team"><button data-scroll class="btn btn-primary email-btn" type="button">EMAIL US <i class="material-symbols-sharp btn-icon">mail</i></button></a>
+            <br class="contact-linebreak">
+            <a href="https://www.instagram.com/25k.vrc/" target="_blank"><button data-scroll class="btn btn-light social-btn" aria-label="Instagram Button" title="Instagram" type="button"><i class="bi bi-instagram btn-icon"></i></button></a>
+            <a href="https://twitter.com/vrc25k" target="_blank"><button data-scroll class="btn btn-light social-btn" aria-label="Twitter Button" title="Twitter" type="button"><i class="bi bi-twitter btn-icon"></i></button></a>
+            <a href="https://www.linkedin.com/company/vrc25k/" target="_blank"><button data-scroll class="btn btn-light social-btn" aria-label="LinkedIn Button" title="LinkedIn" type="button"><i class="bi bi-linkedin btn-icon"></i></button></a>
+          
           </div>
 
           
@@ -376,10 +402,10 @@
         </div>
 
         <div class="row">
-          <div class="col">
+          <div class="col-2">
             <img src="img/logo/klogobow.webp" alt="K Logo" width="40" height="40">
           </div>
-          <div class="col">
+          <div class="col-10">
             <p data-scroll class="footer-c">
               ©️ 2022 Team 25K KAPPA! Robotics
             </p>
@@ -393,8 +419,31 @@
     
 
 
-    <script src="js/scrollObserve.js"></script>
-    <script src="js/scrollAnimate.js"></script>
-    <script src="js/memberScroller.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script async src="js/scrollObserve.js"></script>
+    <script defer src="js/scrollAnimate.js"></script>
+    <script async src="js/memberScroller.js"></script>
+    <script>
+      function navigationSelect() {
+        var togglerOpen=document.getElementById("menu-open");
+        var togglerClose=document.getElementById("menu-close");
+        var navbar=document.getElementById("nav-overlay");
+
+        if(togglerOpen.classList.contains('active')){
+          togglerOpen.classList.remove('active');
+          
+          togglerClose.classList.add('active');
+
+          navbar.style.left = '100%';
+        }
+        else{
+          togglerOpen.classList.add('active');
+          
+          togglerClose.classList.remove('active');
+
+          navbar.style.left = '0';
+        }
+      }
+    </script>
   </body>
 </html>

@@ -29,6 +29,13 @@
 
 /* RESPONSIVE */
 
+@media screen and (max-width: 1200px) {
+  .sponsor-line {
+    padding-left: 315px;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   .sponsors-container {
     margin-top: 100px;

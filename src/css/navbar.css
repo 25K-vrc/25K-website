@@ -10,6 +10,7 @@
 
 .navbar {
   padding-bottom: 30px;
+  transition: 0.2s ease;
 }
 
 .navButtons {
@@ -42,9 +43,69 @@
 }
 
 .nav-scrolled {
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  -moz-backdrop-filter: blur(6px);
+  background-color: var(--light80);
+  transition: 0.2s ease;
+}
+
+
+
+.nav-overlay {
+  position: fixed;
+  height: 100vh;
+  background: var(--light80);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  transition: 0.7s ease;
+  left: 100%;
+}
+
+.nav-o-container {
+  padding: 25px;
+  margin-top: 200px;
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 22px;
+}
+
+.nav-o-list {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+}
+.nav-o-listitem {
+  margin-bottom: 22px;
+  text-decoration: none;
+}
+.nav-o-listitem:hover {
+  color: var(--dark100);
+}
+
+.active {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 769px) {
+  .nav-overlay {
+    display: none;
+  }
+
+  .nav-scrolled {
+    padding-bottom: 10px;
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .nav-scrolled:hover {
+    margin-top: -15px;
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -57,5 +118,13 @@
   }
   .navButtons {
     padding-left: 15px;
+  }
+
+  .nav-scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    -moz-backdrop-filter: none;
+
+    background-color: var(--light80);
   }
 }
