@@ -4,13 +4,13 @@
 
 .contact-section-bkg {
   background: linear-gradient(to bottom, var(--light100) 60%, var(--light80));
-  clip-path: inset(-50px -5px 0px -5px);
   border-radius: 20px 20px 20px 20px;
   position: relative;
   margin-top: 200px;
   padding: 55px;
   padding-top: 100px;
   padding-bottom: 200px;
+  z-index: 2;
 }
 
 .contact-btn-container {
