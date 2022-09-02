@@ -351,12 +351,8 @@
   .about-txt {
     margin-top: 50px;
   }
-  .about-photo {
-    width: 100%;
-    margin-top: 30px;
-  }
   .about-teammembers-container {
-    margin-top: 70px;
+    margin-top: 100px;
   }
   .about-teammembers-rowcontainer {
     padding-bottom: 25px;
@@ -405,5 +401,42 @@
     padding-right: 0px;
     padding-left: 0px;
     height: max-content;
+  }
+
+
+  .about-photo {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-photo-top {
+    position: relative; top: 0; left: 0; z-index: 3;
+    transition: 0.5s filter ease;
+    transition-delay: 0.2s;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  }
+  .about-photo-middle {
+    position: absolute; z-index: 2; left: initial; top: 2.5rem; width: 93%;
+    transition: 0.5s filter ease;
+    transition-delay: 0.1s;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+  }
+  .about-photo-bottom {
+    position: absolute; z-index: 1; left: initial; top: 5rem; width: 85%;
+    transition: 0.5s filter ease;
+  }
+  .gallery-btn {
+    display: none;
+  }
+  .gallery-btn:hover {
+    display: none;
+  }
+  .about-photo:hover > .about-photo-top > .gallery-btn {
+    display: none;
   }
 }

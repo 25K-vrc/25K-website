@@ -43,7 +43,8 @@
 }
 
 .nav-scrolled {
-  background-color: var(--light80);
+  background-color: var(--light100);
+  border-bottom: 1px solid var(--dark100);
   transition: 0.2s ease;
 }
 
@@ -52,11 +53,11 @@
 .nav-overlay {
   position: fixed;
   height: 100vh;
-  background: var(--light80);
+  background: var(--light100);
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 4;
   transition: 0.7s ease;
   left: 100%;
 }
@@ -86,6 +87,10 @@
 
 .active {
   display: none;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 
@@ -125,6 +130,6 @@
     -webkit-backdrop-filter: none;
     -moz-backdrop-filter: none;
 
-    background-color: var(--light80);
+    background-color: var(--light100);
   }
 }

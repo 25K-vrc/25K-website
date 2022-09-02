@@ -123,12 +123,21 @@
 @media screen and (max-width: 1200px) {
   .cover-desc {
     text-align: left;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     margin-left: 2px;
   }
   .covercard {
     height: 88vh;
+  }
+  .cover-btndesc-box {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .cover-desc {
+    padding-top: 30px;
   }
 }
 
@@ -159,6 +168,9 @@
     height: 45px;
     margin-top: 0px;
     margin-right: -5px;
+  }
+  .cover-desc {
+    padding-top: 20px;
   }
   .cover-btndesc-box {
     padding-top: 20px;

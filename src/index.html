@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -434,6 +434,7 @@
         var togglerOpen=document.getElementById("menu-open");
         var togglerClose=document.getElementById("menu-close");
         var navbar=document.getElementById("nav-overlay");
+        var html=document.getElementById("html");
 
         if(togglerOpen.classList.contains('active')){
           togglerOpen.classList.remove('active');
@@ -441,6 +442,8 @@
           togglerClose.classList.add('active');
 
           navbar.style.left = '100%';
+
+          html.classList.remove('noscroll');
         }
         else{
           togglerOpen.classList.add('active');
@@ -448,6 +451,8 @@
           togglerClose.classList.remove('active');
 
           navbar.style.left = '0';
+
+          html.classList.add('noscroll');
         }
       }
     </script>
