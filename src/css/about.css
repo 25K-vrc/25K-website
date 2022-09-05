@@ -42,12 +42,83 @@
 .about-photo {
   margin-top: 60px;
   width: 80%;
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+.about-photo-top {
+  position: relative; top: 0; left: 0; z-index: 3;
+  transition: 0.5s filter ease;
+  transition-delay: 0.2s;
+}
+.about-photo-middle {
+  position: absolute; z-index: 2; left: 4rem; height: 90%;
+  transition: 0.5s filter ease;
+  transition-delay: 0.1s;
+}
+.about-photo-bottom {
+  position: absolute; z-index: 1; left: 8rem; height: 80%;
   transition: 0.5s filter ease;
 }
 
-.about-photo:hover {
+.about-photo-top:hover {
   filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.25));
   transition: 0.5s filter ease;
+}
+.about-photo-top:hover + .about-photo-middle {
+  filter: drop-shadow(0px 7.5px 27.5px rgba(0, 0, 0, 0.25));
+  transition: 0.5s filter ease;
+  transition-delay: 0.1s;
+}
+.about-photo-top:hover ~ .about-photo-bottom {
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.25));
+  transition: 0.5s filter ease;
+  transition-delay: 0.2s;
+}
+
+.about-photo-middle:hover {
+  filter: drop-shadow(0px 7.5px 27.5px rgba(0, 0, 0, 0.25));
+  transition: 0.5s filter ease;
+}
+.about-photo-middle:hover ~ .about-photo-bottom {
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.25));
+  transition: 0.5s filter ease;
+  transition-delay: 0.1s;
+}
+
+.about-photo-bottom:hover {
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.25));
+  transition: 0.5s filter ease;
+}
+
+.gallery-btn {
+  position: absolute; bottom: 15px; right: 15px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(7px);
+  display: inline-block;
+  width: 60px;
+}
+.gallery-btn:hover {
+  width: 200px;
+}
+.gallery-btn-text {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  
+}
+.gallery-btn:hover > .gallery-btn-text {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  transition-delay: 0.35s;
+}
+
+.about-photo:hover > .about-photo-top > .gallery-btn {
+  display: inline;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .about-teammembers-container {
@@ -280,12 +351,8 @@
   .about-txt {
     margin-top: 50px;
   }
-  .about-photo {
-    width: 100%;
-    margin-top: 30px;
-  }
   .about-teammembers-container {
-    margin-top: 70px;
+    margin-top: 100px;
   }
   .about-teammembers-rowcontainer {
     padding-bottom: 25px;
@@ -334,5 +401,42 @@
     padding-right: 0px;
     padding-left: 0px;
     height: max-content;
+  }
+
+
+  .about-photo {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-photo-top {
+    position: relative; top: 0; left: 0; z-index: 3;
+    transition: 0.5s filter ease;
+    transition-delay: 0.2s;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  }
+  .about-photo-middle {
+    position: absolute; z-index: 2; left: initial; top: 2.5rem; width: 93%;
+    transition: 0.5s filter ease;
+    transition-delay: 0.1s;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+  }
+  .about-photo-bottom {
+    position: absolute; z-index: 1; left: initial; top: 5rem; width: 85%;
+    transition: 0.5s filter ease;
+  }
+  .gallery-btn {
+    display: none;
+  }
+  .gallery-btn:hover {
+    display: none;
+  }
+  .about-photo:hover > .about-photo-top > .gallery-btn {
+    display: none;
   }
 }
