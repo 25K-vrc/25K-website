@@ -115,6 +115,27 @@
   transition-delay: 0.35s;
 }
 
+.gallery-container {
+  margin: 45px;
+
+}
+
+.gallery-text {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 95px;
+  line-height: 91px;
+
+  color: var(--light100)
+}
+
+.gallery-image-container {
+  padding-top: 110px;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+
 .about-photo:hover > .about-photo-top > .gallery-btn {
   display: inline;
   opacity: 1;
