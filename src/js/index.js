@@ -9,7 +9,6 @@ export var scroll;
 
 scroll = new LocomotiveScroll({
   el: scrollContainer,
-  firefoxMultiplier: 100,
   smooth: true,
   getSpeed: true,
   multiplier: 1.1,
@@ -21,7 +20,6 @@ scroll = new LocomotiveScroll({
   
   tablet: {
     smooth: true,
-    firefoxMultiplier: 100,
   },
 });
 

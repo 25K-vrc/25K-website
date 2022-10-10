@@ -142,6 +142,17 @@
   display: none;
 }
 
+.videoplayer-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  width: 60px;
+}
+
 .card {
   border-radius: 0px;
   background: var(--light100);
@@ -438,5 +449,20 @@
   }
   .about-photo:hover > .about-photo-top > .gallery-btn {
     display: none;
+  }
+
+  .videoplayer-btn {
+    width: 48px;
+    position: absolute;
+
+    top: initial;
+    bottom: initial;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    margin-top: 70px;
+
+    padding-right: 13px;
   }
 }
