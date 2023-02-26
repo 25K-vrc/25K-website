@@ -54,12 +54,12 @@
   transition-delay: 0.2s;
 }
 .about-photo-middle {
-  position: absolute; z-index: 2; left: 4rem; height: 90%;
+  position: absolute; z-index: 2; left: 7.7rem; height: 90%; width: auto;
   transition: 0.5s filter ease;
   transition-delay: 0.1s;
 }
 .about-photo-bottom {
-  position: absolute; z-index: 1; left: 8rem; height: 80%;
+  position: absolute; z-index: 1; left: 15.4rem; height: 80%; width: auto;
   transition: 0.5s filter ease;
 }
 
